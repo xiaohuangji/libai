@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd" >
+<mapper namespace="com.dajie.wika.dao.PlatformMapDAO">
+	<resultMap id="PlatformMap" type="com.dajie.wika.model.PlatformMap">
+		<id column="user_id" property="userId" jdbcType="INTEGER" />
+		<id column="platform_type" property="PlatformType" jdbcType="TINYINT" />
+		<id column="platform_uid" property="PlatformUid" jdbcType="VARCHAR" />
+		<id column="access_token" property="accessToken" jdbcType="VARCHAR" />
+		<id column="secret_token" property="secretToken" jdbcType="VARCHAR" />
+		<id column="token_type" property="tokenType" jdbcType="TINYINT" />
+		<id column="expire" property="expire" jdbcType="BIGINT" />
+		<id column="source" property="source" jdbcType="TINYINT" />
+		<id column="access_time" property="accessTime" jdbcType="TIMESTAMP" />
+		<id column="status" property="status" jdbcType="TINYINT" />
+	</resultMap>
+
+	<insert id="insertMap" parameterType="com.dajie.wika.model.PlatformMap">
+		insert into platform_map
+		(user_id,platform_type,platform_uid,access_token,secret_token,expire,source,access_time,status)
+		values
+		(#{userId},#{platformType},#{platformUid},#{accessToken},#{secretToken},#{expire},#{source},#{accessTime},#{status})
+	</insert>
+
+	<select id="getPlatformMapByUserId" resultMap="PlatformMap"
+		parameterType="java.lang.Integer">
+		select
+		user_id,platform_type,platform_uid,access_token,secret_token,token_type,expire,source,access_time,status
+		from platform_map
+		where user_id = #{userId}
+	</select>
+
+	<select id="getPlatformMapByUserIdAndType" resultMap="PlatformMap"
+		parameterType="java.util.Map">
+		select
+		user_id,platform_type,platform_uid,access_token,secret_token,token_type,expire,source,access_time,status
+		from platform_map
+		where user_id = #{userId} and platform_type=#{platformType} limit 1;
+	</select>
+
+	<select id="getPlatformMap" resultMap="PlatformMap"
+		parameterType="java.util.Map">
+		select
+		user_id,platform_type,platform_uid,access_token,secret_token,token_type,expire,source,access_time,status
+		from platform_map
+		where platform_uid = #{platformUid} and platform_type =
+		#{platformType} limit 1;
+	</select>
+
+	<delete id="deleteByUserIdAndType" parameterType="java.util.Map">
+		delete from platform_map where user_id = {userId} and platform_type=#{platformType}
+	</delete>
+	
+	<delete id="deleteByPlatformIdAndType" parameterType="java.util.Map">
+	    delete from platform_map where platform_uid=#{platformUid} and platform_type=#{platformType}
+	</delete>
+	
+	<update id="updatePlatformMap" parameterType="com.dajie.wika.model.PlatformMap">
+	    update platform_map set 
+	      user_id = #{userId},
+	      platform_type = #{platformType},
+	      platform_uid=#{platformUid},
+	      access_token=#{accessToken},
+	      secret_token=#{secretToken},
+	      token_type=#{tokenType},
+	      expire=#{expire},
+	      access_time=#{accessTime},
+	      status=#{status}
+	    where user_id = #{userId}
+	</update>
+</mapper>

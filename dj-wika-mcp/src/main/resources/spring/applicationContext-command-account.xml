@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<bean id="accountGetVerifyCodeCommand" class="com.dajie.mobile.mcp.api.command.account.GetVerifyCode">
+		<property name="accountService" ref="wikaAccountService" />
+	</bean>
+
+	<bean id="accountRegisterCommand" class="com.dajie.mobile.mcp.api.command.account.Register">
+		<property name="passportService" ref="passportService" />
+		<property name="accountService" ref="wikaAccountService" />
+	</bean>
+
+	<bean id="accountLoginCommand" class="com.dajie.mobile.mcp.api.command.account.Login">
+		<property name="passportService" ref="passportService" />
+		<property name="accountService" ref="wikaAccountService" />
+	</bean>
+	
+	<bean id="accountLoginWithDJCommand" class="com.dajie.mobile.mcp.api.command.account.LoginWithDJ">
+		<property name="passportService" ref="passportService" />
+		<property name="accountService" ref="wikaAccountService" />
+	</bean>
+
+	<bean id="accountBindMobileCommand" class="com.dajie.mobile.mcp.api.command.account.BindMobile">	
+		<property name="accountService" ref="wikaAccountService" />
+	</bean>
+	
+	<bean id="accountChangePasswordCommand" class="com.dajie.mobile.mcp.api.command.account.ChangePassword">	
+		<property name="accountService" ref="wikaAccountService" />
+	</bean>
+	
+	<bean id="accountChangePasswordWithVerifyCodeCommand" class="com.dajie.mobile.mcp.api.command.account.ChangePasswordWithVerifyCode">	
+		<property name="accountService" ref="wikaAccountService" />
+	</bean>
+	
+	<bean id="accountValidateVerifyCodeCommand" class="com.dajie.mobile.mcp.api.command.account.ValidateVerifyCode">
+		<property name="accountService" ref="wikaAccountService" />
+	</bean>
+	
+	<bean id="accountUpdateUserInfoCommand" class="com.dajie.mobile.mcp.api.command.account.UpdateUserInfo">
+		<property name="accountService" ref="wikaAccountService" />
+	</bean>
+	
+	<bean id="accountUpdateUserQRCodeCommand" class="com.dajie.mobile.mcp.api.command.account.UpdateUserQRCode">
+	    <property name="accountService" ref="wikaAccountService" />
+	</bean>
+	
+	<bean id="accountUpdateWikaTemplateCommand" class="com.dajie.mobile.mcp.api.command.account.UpdateWikaTemplate">
+	     <property name="accountService" ref="wikaAccountService" />
+	</bean>
+	
+	<bean id="accountUpdateAvatarCommand" class="com.dajie.mobile.mcp.api.command.account.UpdateAvatar">
+	     <property name="accountService" ref="wikaAccountService" />
+	</bean>
+	
+	<bean id="accountUpdateAvatarAndQRCodeCommand" class="com.dajie.mobile.mcp.api.command.account.UpdateAvatarAndQRCode">
+	     <property name="accountService" ref="wikaAccountService" />
+	</bean>
+	
+	<bean id="accountActiveDJAccountCommand" class="com.dajie.mobile.mcp.api.command.account.ActiveDJAccount">
+	     <property name="accountService" ref="wikaAccountService" />
+	</bean>
+</beans>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.dajie:dj-framework-config-datasource:1.0.00">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/dajie/dj-framework-config-datasource/1.0.00/dj-framework-config-datasource-1.0.00.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/dajie/dj-framework-config-datasource/1.0.00/dj-framework-config-datasource-1.0.00-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/dajie/dj-framework-config-datasource/1.0.00/dj-framework-config-datasource-1.0.00-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

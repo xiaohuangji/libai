@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd" >
+<mapper namespace="com.dajie.wika.dao.UserDeviceDAO">
+	<resultMap id="UserDevice" type="com.dajie.wika.model.UserDevice">
+		<id column="user_id" property="userId" jdbcType="INTEGER" />
+		<id column="device_token" property="deviceToken" jdbcType="VARCHAR" />
+		<id column="device_type" property="deviceType" jdbcType="TINYINT" />
+		<id column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+	</resultMap>
+
+	<insert id="setUserDevice" parameterType="com.dajie.wika.model.UserDevice">
+		replace into
+		user_device (user_id,device_token,device_type)
+		values
+		(#{userId},#{deviceToken},#{deviceType})
+	</insert>
+
+	<select id="getDeviceByUserId" parameterType="java.lang.Integer"
+		resultMap="UserDevice">
+		select user_id,device_token,device_type
+		from user_device
+		where user_id = #{userId}
+	</select>
+
+	<select id="getDeviceByUserIdAndType" parameterType="java.util.Map"
+		resultMap="UserDevice">
+		select user_id,device_token,device_type,update_time
+		from
+		user_device
+		where user_id = #{userId} and device_type=#{deviceType}
+	</select>
+
+	<select id="getDeviceByTokenAndType" parameterType="java.util.Map"
+		resultMap="UserDevice">
+		select user_id,device_token,device_type
+		from user_device
+		where device_token = #{deviceToken} and device_type=#{deviceType}
+	</select>
+
+	<update id="updateUserDevice" parameterType="com.dajie.wika.model.UserDevice">
+		update user_device
+		set device_token = #{deviceToken}
+		where user_id=#{userId} and
+		device_type=#{deviceType}
+	</update>
+
+	<delete id="deleteByUserIdAndType" parameterType="java.util.Map">
+		delete from
+		user_device where user_id =#{userId} and
+		device_type=#{deviceType}
+	</delete>
+
+	<delete id="deleteByTokenAndType" parameterType="java.util.Map">
+		delete from
+		user_device where device_token =#{deviceToken} and
+		device_type=#{deviceType}
+	</delete>
+
+	<delete id="deleteByUserId" parameterType="java.lang.Integer">
+		delete from
+		user_device where user_id = #{userId}
+	</delete>
+</mapper>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <bean id="dataSource" class="com.dajie.wika.weixin.dao.inject.DataSource" init-method="init">
+        <property name="dbName" value="db_wika"></property>
+    </bean>
+
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+
+    <!--<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">-->
+        <!--<property name="basePackage" value="com.dajie.wika.weixin.dao" />-->
+        <!--&lt;!&ndash;<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />&ndash;&gt;-->
+    <!--</bean>-->
+
+    <bean id="daoBeanDefinitionRegisteyPostProcessor" class="com.dajie.wika.weixin.dao.inject.DAOBeanDefinitionRegisteyPostProcessor">
+    <property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
+    <property name="scanPackage">
+    <list>
+        <value>com.dajie.wika.weixin.dao</value>
+    </list>
+    </property>
+    </bean>
+</beans>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd" >
+<mapper namespace="com.dajie.wika.dao.RelationFollowerDAO">
+
+	<insert id="insert" parameterType="java.util.Map">
+		insert into relation_follower
+		(user_id,follower_id,create_time) values
+		(#{userId},#{followerId},#{createTime})
+	</insert>
+
+	<delete id="delete" parameterType="java.util.Map">
+		delete from relation_follower
+		where user_id = #{userId} and follower_id =
+		#{followerId}
+	</delete>
+
+	<select id="getFollowers" parameterType="java.lang.Integer"
+		resultType="java.lang.Integer">
+		select follower_id from
+		relation_follower where user_id =
+		#{userId} order by create_time desc
+	</select>
+
+	<select id="getFollowerCountByInterval" parameterType="java.util.Map"
+		resultType="java.lang.Integer">
+		select
+		count(user_id) from relation_follower where user_id =
+		#{userId} and
+		create_time &lt;= #{endTime} and create_time &gt;=
+		#{startTime}
+	</select>
+	
+	<select id="isFollower" resultType="java.lang.Integer" parameterType="java.util.Map">
+	    select count(user_id) from relation_follower where user_id = #{userId} and follower_id = #{followerId}
+	</select>
+ 
+    <select id="getNewFollowerCount" resultType="java.lang.Integer" parameterType="java.lang.Integer">
+        select count(user_id) from relation_follower where user_id = #{userId} and is_new = 1
+    </select>
+    
+    <update id="cleanNewFollower" parameterType="java.lang.Integer">
+        update relation_follower set is_new=0 where user_id = #{userId}
+    </update>
+    
+</mapper>

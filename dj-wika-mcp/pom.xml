@@ -1,0 +1,396 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.dajie</groupId>
+	<artifactId>dj-wika-mcp</artifactId>
+	<packaging>war</packaging>
+	<version>1.0-SNAPSHOT</version>
+	<name>dj-wika-mcp webapp</name>
+	<description>dajie mobile client platfrom webapp</description>
+	<developers>
+		<developer>
+			<id>john</id>
+			<name>wei.cheng</name>
+			<email>wei.cheng@dajie-inc.com</email>
+		</developer>
+	</developers>
+
+	<parent>
+		<groupId>com.dajie</groupId>
+		<artifactId>dj-base-parent</artifactId>
+		<version>2.0.1-SNAPSHOT</version>
+	</parent>
+
+	<properties>
+		<java-version>1.6</java-version>
+		<org.springframework-version>3.2.2.RELEASE</org.springframework-version>
+		<org.slf4j-version>1.6.1</org.slf4j-version>
+	</properties>
+
+
+	<dependencies>
+		<dependency>
+			<groupId>com.github.sgroschupf</groupId>
+			<artifactId>zkclient</artifactId>
+			<version>0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>1.8.3</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+			<version>3.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.3</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.15</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.json-lib</groupId>
+			<artifactId>json-lib</artifactId>
+			<version>2.4</version>
+			<classifier>jdk15</classifier>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.ezmorph</groupId>
+			<artifactId>ezmorph</artifactId>
+			<version>1.0.6</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.2.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- spring -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aspects</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-expression</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jms</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-oxm</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-core-asl</artifactId>
+			<version>1.9.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>1.9.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpcore</artifactId>
+			<version>4.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${org.slf4j-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>jcl-over-slf4j</artifactId>
+			<version>${org.slf4j-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${org.slf4j-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.20</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<!-- dajie jar -->
+		<!-- <dependency> -->
+		<!-- <groupId>com.xiaonei.xce</groupId> -->
+		<!-- <artifactId>oce-dbjavapool</artifactId> -->
+		<!-- <version>1.0-SNAPSHOT</version> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>com.xiaonei</groupId> -->
+		<!-- <artifactId>dajie-wap-remote-logger2</artifactId> -->
+		<!-- <version>1.0-SNAPSHOT</version> -->
+		<!-- <exclusions> -->
+		<!-- <exclusion> -->
+		<!-- <artifactId>jmxtools</artifactId> -->
+		<!-- <groupId>com.sun.jdmk</groupId> -->
+		<!-- </exclusion> -->
+		<!-- <exclusion> -->
+		<!-- <artifactId>jmxri</artifactId> -->
+		<!-- <groupId>com.sun.jmx</groupId> -->
+		<!-- </exclusion> -->
+		<!-- </exclusions> -->
+		<!-- </dependency> -->
+
+		<!-- 各个模块依赖的总包，构造假数据用，依赖这一个就行了 -->
+		<!-- <dependency> -->
+		<!-- <groupId>com.dajie</groupId> -->
+		<!-- <artifactId>dj-wika-api-service-def</artifactId> -->
+		<!-- <version>1.0-SNAPSHOT</version> -->
+		<!-- <exclusions> -->
+		<!-- <exclusion> -->
+		<!-- <groupId>org.springframework</groupId> -->
+		<!-- <artifactId>spring</artifactId> -->
+		<!-- </exclusion> -->
+		<!-- </exclusions> -->
+		<!-- </dependency> -->
+
+		<!-- dubbo -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>dubbo</artifactId>
+			<version>2.5.3</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework</groupId>
+					<artifactId>spring</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<!-- cache -->
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+			<version>2.1.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.dajie</groupId>
+			<artifactId>dj-framework-cluster-cache</artifactId>
+			<version>1.0.05</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.dajie</groupId>
+			<artifactId>dj-wika-client</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<finalName>${project.artifactId}</finalName>
+		<resources>
+			<resource>
+				<directory>src/main/java</directory>
+				<filtering>true</filtering>
+				<includes>
+					<include>**/*.java</include>
+				</includes>
+				<excludes>
+					<exclude>.svn</exclude>
+				</excludes>
+			</resource>
+			<resource>
+				<directory>gen_src</directory>
+				<filtering>true</filtering>
+				<includes>
+					<include>**/*.java</include>
+				</includes>
+				<excludes>
+					<exclude>.svn</exclude>
+				</excludes>
+			</resource>
+		</resources>
+		<testResources>
+			<testResource>
+				<filtering>true</filtering>
+				<directory>src/test/java</directory>
+				<includes>
+					<include>**/*.java</include>
+				</includes>
+				<excludes>
+					<exclude>.svn</exclude>
+				</excludes>
+			</testResource>
+		</testResources>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+					<verbose>true</verbose>
+					<encoding>UTF-8</encoding>
+					<compilerArguments>
+						<sourcepath>${project.basedir}/src/main/java</sourcepath>
+						<sourcepath>${project.basedir}/gen_src</sourcepath>
+					</compilerArguments>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.4.3</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<archiveClasses>true</archiveClasses>
+					<webResources>
+						<resource>
+							<directory>src/main/templates</directory>
+							<targetPath>WEB-INF/templates</targetPath>
+							<includes>
+								<include>**/*</include>
+							</includes>
+						</resource>
+						<resource>
+							<directory>src/main/resources</directory>
+							<targetPath>WEB-INF/classes</targetPath>
+							<includes>
+								<include>**/*</include>
+							</includes>
+						</resource>
+						<resource>
+							<directory>src/main/webapp</directory>
+							<targetPath>/</targetPath>
+							<excludes>
+								<exclude>**/*.jsp</exclude>
+							</excludes>
+						</resource>
+					</webResources>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.7</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+					<nohelp>true</nohelp>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.7</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+					<nohelp>true</nohelp>
+				</configuration>
+			</plugin>
+		</plugins>
+	</reporting>
+</project>

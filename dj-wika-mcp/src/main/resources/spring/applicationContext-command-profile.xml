@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<bean id="getUserCountCommand" class="com.dajie.mobile.mcp.api.command.profile.GetUserCount">
+		<property name="userCountServiceStub" ref="userCountServiceStub" />
+	</bean>
+
+	<bean id="getUserProfileCommand" class="com.dajie.mobile.mcp.api.command.profile.GetUserProfile">
+		<property name="profileServiceStub" ref="profileServiceStub" />
+	</bean>
+	
+	<bean id="resolveShortUrlCommand" class="com.dajie.mobile.mcp.api.command.profile.ResolveShortUrl">
+		<property name="shortUrlService" ref="shortUrlService" />
+	</bean>
+	
+	<bean id="searchCorpNameCommand" class="com.dajie.mobile.mcp.api.command.profile.SearchCorpName">
+		<property name="corpSearchService" ref="corpSearchService" />
+	</bean>
+</beans>

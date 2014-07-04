@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<appender name="mcp_stdout" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="/ROOT/logs/mcp_wika/mcp_wika_stdout.log" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd-HH:mm:ss,SSS} %5p   - %m%n" />
+		</layout>
+	</appender>
+	
+	<appender name="wika_service" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="/ROOT/logs/mcp_wika/wika_service.log" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd-HH:mm:ss,SSS} %5p   - %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="mcp_stat" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="/ROOT/logs/mcp_wika/mcp_wika_stat.log" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+
+	<appender name="mcp_stat_access" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="/ROOT/logs/mcp_wika/mcp_wika_stat_access.log" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+
+	<appender name="mcp_user_access" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="/ROOT/logs/mcp_wika/mcp_wika_user_access.log" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+
+	<appender name="mcp_http_access" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="/ROOT/logs/mcp_wika/mcp_wika_http_access.log" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+
+	<logger name="com.dajie.mobile" additivity="false">
+		<level value="debug" />
+		<appender-ref ref="mcp_stdout" />
+	</logger>
+
+	<logger name="com.dajie.wika" additivity="false">
+		<level value="debug" />
+		<appender-ref ref="wika_service" />
+	</logger>
+
+	<logger name="mcp_stat_log" additivity="false">
+		<level value="info" />
+		<appender-ref ref="mcp_stat" />
+	</logger>
+
+	<logger name="mcp_stat_access_log" additivity="false">
+		<level value="info" />
+		<appender-ref ref="mcp_stat_access" />
+	</logger>
+
+	<logger name="mcp_user_access_log" additivity="false">
+		<level value="info" />
+		<appender-ref ref="mcp_user_access" />
+	</logger>
+
+	<logger name="mcp_http_access_log" additivity="false">
+		<level value="info" />
+		<appender-ref ref="mcp_http_access" />
+	</logger>
+
+	<root>
+		<level value="debug" />
+		<appender-ref ref="mcp_stdout" />
+	</root>
+
+</log4j:configuration>

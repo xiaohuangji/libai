@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd" >
+<mapper namespace="com.dajie.wika.dao.UserCountBaseDAO">
+    <resultMap id="userCountBase_map" type="com.dajie.wika.model.UserCountBase">
+        <id column="user_id" property="userId" jdbcType="INTEGER"/>
+        <result column="following_count" property="followingCount" jdbcType="INTEGER"/>
+        <result column="follower_count" property="followerCount" jdbcType="INTEGER"/>
+        <result column="friend_count" property="friendCount" jdbcType="INTEGER"/>
+        <result column="introduce_count" property="introduceCount" jdbcType="INTEGER"/>
+        <result column="visited_count" property="visitedCount" jdbcType="INTEGER"/>
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <insert id="insert" parameterType="java.lang.Integer">
+        INSERT IGNORE user_count_base (user_id) VALUES
+        (#{userId})
+    </insert>
+    
+    <update id="incrValue" parameterType="java.util.Map" statementType="STATEMENT">
+        update user_count_base set ${type}=if(${type}+${incrvalue}>0,${type}+${incrvalue},0)
+        where user_id = ${userId}
+    </update>
+
+    <select id="getUserCount" resultMap="userCountBase_map" parameterType="java.lang.Integer">
+        SELECT * FROM user_count_base
+  		where user_id = #{userId}
+    </select>
+
+</mapper>

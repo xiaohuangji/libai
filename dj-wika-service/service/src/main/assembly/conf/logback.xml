@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- slf4j日志配置文件 -->
+<configuration debug="true" scan="true" scanPeriod="30 seconds">
+
+	<property name="log.dir" value="/ROOT/logs/wika_service" />
+
+	<property name="encoding" value="UTF-8" />
+	<property name="normal-pattern"
+		value="%d{yyyy-MM-dd.HH:mm:ss} %-5level [%thread] %logger{50}.%M:%L  %msg%n" />
+	<property name="plain-pattern" value="%d{yyyy-MM-dd.HH:mm:ss} %msg%n" />
+
+<!-- 	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender"> -->
+<!-- 		<encoder> -->
+<!-- 			<pattern>${plain-pattern}</pattern> -->
+<!-- 			<charset>${encoding}</charset> -->
+<!-- 		</encoder> -->
+<!-- 	</appender> -->
+	
+	<appender name="WIKA_APPENDER"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<prudent>true</prudent>
+		<Append>true</Append>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<FileNamePattern>${log.dir}/wika-service.%d{yyyy-MM-dd}.log</FileNamePattern>
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<pattern>${normal-pattern}</pattern>
+			<charset>${encoding}</charset>
+		</encoder>
+	</appender>
+
+	<logger name="com.dajie.wika" level="INFO" >
+		<appender-ref ref="WIKA_APPENDER" />
+	</logger>
+	
+	<!-- 日志输出级别 -->
+	<root level="INFO">
+		<appender-ref ref="STDOUT" />
+	</root>
+	
+</configuration>

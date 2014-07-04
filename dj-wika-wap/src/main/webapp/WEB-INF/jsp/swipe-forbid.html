@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>横向划屏禁止 - demo</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="
+    width=device-width,
+    initial-scale=1,
+    minimum-scale=1,
+    maximum-scale=1,
+    user-scalable=no">
+  <style type="text/css">
+    body{
+      height:1000px;
+    }
+  </style>
+  <script type="text/javascript" src="/up/dj-mobile/vcard/lib/zepto.js"></script>
+  <script type="text/javascript" src="/up/dj-mobile/vcard/lib/touch.js"></script>
+</head>
+<body>
+阻止横向划屏的时候，某些浏览器（uc,qq）的前进后退事件
+<p id="start"></p>
+<p id="endY"></p>
+<p id="endX"></p>
+<p id="swipe"></p>
+</body>
+<script type="text/javascript">
+  function getId(id){
+    return document.getElementById(id);
+  }
+  (function(){
+    var num_y_start;
+    var num_x_start;
+    var num_time_start;
+    $(document).on('swipeLeft', function(){
+      getId('swipe').innerHTML =  '左划屏' + (new Date()- 0);
+    });
+    $(document).on('swipeRight', function(){
+      getId('swipe').innerHTML =  '右划屏' + (new Date()- 0);
+    });
+    document.addEventListener('touchstart', function(e){
+      num_y_start = e.targetTouches[0].pageY;
+      num_x_start = e.targetTouches[0].pageX;
+      num_time_start = new Date()- 0;
+      document.addEventListener('touchmove', moveHandler);
+    });
+    function moveHandler(e){
+      getId('start').innerHTML = '触发时间' + (num_time_start - (new Date() -0));
+      crossY = num_y_start - e.changedTouches[0].pageY;
+      crossX = num_x_start - e.changedTouches[0].pageX;
+      getId('endY').innerHTML = '垂直移动' + crossY;
+      getId('endX').innerHTML = '水平移动' + crossX;
+      document.removeEventListener('touchmove', moveHandler);
+      // 如果纵向移动距离小于5，或者水平移动距离大于5，就认为是横向划屏（经验值）
+      if(Math.abs(crossY) < 5 || Math.abs(crossX) > 5){
+        e.preventDefault();
+      }
+    }
+  })();
+
+</script>
+</html>

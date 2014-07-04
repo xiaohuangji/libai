@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd" >
+<mapper namespace="com.dajie.wika.dao.RelationFollowingDAO">
+	<insert id="insert" parameterType="java.util.Map">
+		insert into relation_following
+		(user_id,following_id,create_time)
+		values
+		(#{userId},#{followingId},#{createTime})
+	</insert>
+
+	<delete id="delete" parameterType="java.util.Map">
+		delete from relation_following
+		where user_id = #{userId} and following_id =
+		#{followingId}
+	</delete>
+
+	<select id="getFollowings" resultType="java.lang.Integer"
+		parameterType="java.lang.Integer">
+		select following_id from relation_following where
+		user_id =#{userId} order by create_time desc
+	</select>
+
+	<select id="getFollowingCountByInterval" resultType="java.lang.Integer"
+		parameterType="java.util.Map">
+		select count(user_id) from relation_following where
+		user_id =
+		#{userId} and
+		create_time &lt;= #{endTime} and create_time &gt;=
+		#{startTime}
+	</select>
+	
+	<select id="isFollowing" resultType="java.lang.Integer" parameterType="java.util.Map">
+	    select count(user_id) from relation_following where user_id = #{userId} and following_id = #{followingId}
+	</select>
+</mapper>

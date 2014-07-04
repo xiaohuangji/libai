@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd" >
+<mapper namespace="com.dajie.wika.dao.UnlockTemplateDAO">
+
+	<select id="getUnlockedWikaTids" resultType="java.lang.String"
+		parameterType="java.lang.Integer">
+		select tids from unlock_template where type = 1 and uid = #{userId};
+	</select>
+
+	<select id="getUnlockedQRTids" resultType="java.lang.String"
+		parameterType="java.lang.Integer">
+		select tids from unlock_template where type = 2 and uid = #{userId};
+	</select>
+	
+	<insert id="insertUnlockedWikaTids" parameterType="java.util.Map">
+		insert unlock_template (uid, type, tids) values (#{userId}, 1, #{tids});
+	</insert>
+
+	<insert id="insertUnlockedQRTids" parameterType="java.util.Map">
+		insert unlock_template (uid, type, tids) values (#{userId}, 2, #{tids});
+	</insert>
+
+	<update id="updateUnlockedWikaTids" parameterType="java.util.Map">
+		update unlock_template set tids = #{tids} where type = 1 and uid = #{userId};
+	</update>
+
+	<update id="updateUnlockedQRTids" parameterType="java.util.Map">
+		update unlock_template set tids = #{tids} where type = 2 and uid = #{userId};
+	</update>
+</mapper>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd" >
+<mapper namespace="com.dajie.wika.dao.QRcodeDAO">
+    <resultMap id="qr_code_map" type="com.dajie.wika.model.UserQRSet">
+        <id column="user_id" property="userId" jdbcType="INTEGER"/>
+        <result column="qr_id" property="qrId" jdbcType="INTEGER"/>
+        <result column="qr_url" property="qrUrl" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <insert id="insertUserQRSets" parameterType="java.util.List">
+        REPLACE INTO user_qr_code (user_id,qr_id,qr_url) VALUES
+         <foreach collection="list" item="qr" index="index" separator=",">
+            (#{qr.userId,jdbcType=INTEGER},
+            #{qr.qrId,jdbcType=INTEGER},
+            #{qr.qrUrl,jdbcType=VARCHAR}
+            )
+        </foreach>
+    </insert>
+   
+    <select id="getUserQRcode" resultMap="qr_code_map" parameterType="java.lang.Integer">
+        SELECT user_id,qr_id,qr_url FROM user_qr_code
+  		where user_id = #{userId}
+    </select>
+    
+    <select id="getUserQRcodeUrl" resultType="java.lang.String" parameterType="java.util.Map">
+        SELECT qr_url FROM user_qr_code
+  		where user_id = #{userId}
+  		and qr_id= #{qrId}
+    </select>
+    
+</mapper>

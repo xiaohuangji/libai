@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+ <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+ 
+<trial:assertcss files="/up/dj-mobile/vcard/css/mycard-skin.css"/>
+<trial:assertjs files="/up/dj-mobile/vcard/lib/template.min.js,/up/dj-mobile/vcard/js/mycard-skin.js,/up/dj-mobile/vcard/tpl/mycard-skin.tpl.js" />
+
+<!-- <link rel="stylesheet" href="http://assets.dajieimg.com.wika/up/dj-mobile/vcard/css/mycard-skin.css"/>
+<script type="text/javascript" src="http://assets.dajieimg.com.wika/up/dj-mobile/vcard/lib/template.min.js"></script>
+<script type="text/javascript" src="http://assets.dajieimg.com.wika/up/dj-mobile/vcard/js/mycard-skin.js"></script>
+<script type="text/javascript" src="http://assets.dajieimg.com.wika/up/dj-mobile/vcard/tpl/mycard-skin.tpl.js"></script> -->
+
+<script type="text/javascript">
+  dj['setPageData']({
+    'p-skin-data' : {
+      'idParent' : 'jp-mycard',
+      'style' : '${userbase.wikaTemplate}', // 皮肤类型
+      'color' : '' , // 按钮颜色 默认 #64a2e1
+     // 'urlEdit' : '/user/qr-large', // 编辑地址
+     // 'urlChange' : '/user/login-unlock', // 换肤地址
+     // 'urlEditText' : '我的脸码', // 编辑地址
+     // 'urlChangeText' :  '微卡换肤', // 换肤地址
+     // 'othersKnowText': '${usercountbase.followerCount}人认识他',
+     // 'othersPriceUrl': 'http://',
+     // 'othersPriceText': '${uservaluedetail.totalValue}',
+      'urlAvatar' : '${avatarPicUrls.b}', // 头像地址
+      'hrefAvatar':'/user/avatar-large?userId=${userbase.userId}',
+      'urlQr' : '${qrPicUrls.l}', // 二维码地址
+      'hrefQr':'/user/qr-large?userId=${userbase.userId}',//
+      'name' : '${userbase.name}', // 姓名
+      'jobs' : '${occupation.position}', // 职位
+      'corp' : '${occupation.corp}', // 公司
+     // 'type' : '互联网', // 职位类别
+      'tel' : '${userbase.mobile}', // 电话
+      'email' : '${userbase.email}' // 邮箱
+    }
+  });
+</script>

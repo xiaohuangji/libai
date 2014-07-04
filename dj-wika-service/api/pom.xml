@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<parent>
+		<groupId>com.dajie</groupId>
+		<artifactId>dj-base-parent</artifactId>
+		<version>2.0.1-SNAPSHOT</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.dajie</groupId>
+	<artifactId>dj-wika-api</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.dajie</groupId>
+			<artifactId>dj-common-bean</artifactId>
+		<version>1.0.04</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		<version>1.7.5</version>
+		</dependency> 
+   </dependencies>
+</project>

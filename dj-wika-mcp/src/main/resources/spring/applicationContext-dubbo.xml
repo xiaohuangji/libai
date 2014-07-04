@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+        ">
+    <dubbo:application name="wika_app" />
+    
+    <dubbo:consumer timeout="10000"/> 
+		
+	<dubbo:reference id="wikaAccountService"
+		interface="com.dajie.wika.service.AccountService">
+	</dubbo:reference>
+	
+	<dubbo:reference id="messageService"
+		interface="com.dajie.wika.service.MessageService">
+	</dubbo:reference>
+	
+	<dubbo:reference id="messageServiceStub"
+		interface="com.dajie.wika.service.stub.MessageServiceStub">
+	</dubbo:reference>
+	
+	<dubbo:reference id="userCountServiceStub"
+		interface="com.dajie.wika.service.stub.UserCountServiceStub">
+	</dubbo:reference>
+	
+	<dubbo:reference id="systemService"
+		interface="com.dajie.wika.service.SystemService">
+	</dubbo:reference>
+	
+	<dubbo:reference id="resourceService"
+		interface="com.dajie.wika.service.ResourceService">
+	</dubbo:reference>
+	
+	<dubbo:reference id="userSettingsService"
+		interface="com.dajie.wika.service.UserSettingsService">
+	</dubbo:reference>
+	
+	<dubbo:reference id="profileServiceStub"
+		interface="com.dajie.wika.service.stub.ProfileServiceStub">
+	</dubbo:reference>
+
+	<dubbo:reference id="relationService"
+		interface="com.dajie.wika.service.RelationService">
+	</dubbo:reference>
+	
+	<dubbo:reference id="relationServiceStub"
+		interface="com.dajie.wika.service.stub.RelationServiceStub">
+	</dubbo:reference>
+	
+	<dubbo:reference id="shortUrlService"
+		interface="com.dajie.wika.service.ShortUrlService">
+	</dubbo:reference>
+	
+	<dubbo:reference id="corpSearchService"
+		interface="com.dajie.wika.service.CorpSearchService">
+	</dubbo:reference>
+	
+	<dubbo:reference id="templateService"
+		interface="com.dajie.wika.service.TemplateService">
+	</dubbo:reference>
+</beans>

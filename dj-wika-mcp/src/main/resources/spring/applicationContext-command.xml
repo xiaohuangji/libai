@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+
+	<!-- command map -->
+	<util:map id="apiCommandMap" key-type="java.lang.String"
+		value-type="com.dajie.mobile.mcp.api.command.ApiCommand">
+
+		<entry key="account.login" value-ref="accountLoginCommand" />
+		<entry key="account.loginWithDJ" value-ref="accountLoginWithDJCommand" />
+		<entry key="account.getVerifyCode" value-ref="accountGetVerifyCodeCommand" />
+		<entry key="account.register" value-ref="accountRegisterCommand" />
+		<entry key="account.changePassword" value-ref="accountChangePasswordCommand" />
+		<entry key="account.bindMobile" value-ref="accountBindMobileCommand" />
+		<entry key="account.changePasswordWithVerifyCode" value-ref="accountChangePasswordWithVerifyCodeCommand" />
+		<entry key="account.validateVerifyCode" value-ref="accountValidateVerifyCodeCommand" />
+		<entry key="account.updateUserInfo" value-ref="accountUpdateUserInfoCommand" />
+		<entry key="account.updateUserQRCode" value-ref="accountUpdateUserQRCodeCommand" />
+		<entry key="account.updateWikaTemplate" value-ref="accountUpdateWikaTemplateCommand" />
+        <entry key="account.updateAvatar" value-ref="accountUpdateAvatarCommand" />
+        <entry key="account.updateAvatarAndQRCode" value-ref="accountUpdateAvatarAndQRCodeCommand" />
+        <entry key="account.activeDJAccount" value-ref="accountActiveDJAccountCommand" />
+
+		<entry key="profile.getUserProfile" value-ref="getUserProfileCommand" />
+		<entry key="profile.getUserCount" value-ref="getUserCountCommand" />
+		<entry key="profile.resolveShortUrl" value-ref="resolveShortUrlCommand" />
+		<entry key="profile.searchCorpName" value-ref="searchCorpNameCommand" />
+
+		<entry key="relation.follow" value-ref="relationFollowCommand" />
+		<entry key="relation.unfollow" value-ref="relationUnfollowCommand" />
+		<entry key="relation.getFollowers" value-ref="relationGetFollowersCommand" />
+		<entry key="relation.getFollowings" value-ref="relationGetFollowingsCommand" />
+		<entry key="relation.getFriends" value-ref="relationGetFriendsCommand" />
+		<entry key="relation.sayHi" value-ref="relationSayHiCommand" />
+		<entry key="relation.introduce" value-ref="relationIntroduceCommand" />
+		<entry key="relation.shareWika" value-ref="relationShareWikaCommand" />
+
+		<entry key="usersettings.setUserPrivacySettings" value-ref="setUserPrivacySettingsCommand" />
+		<entry key="usersettings.setNotificationsSettings" value-ref="setNotificationsSettingsCommand" />
+		<entry key="usersettings.setDeviceToken" value-ref="setDeviceTokenCommand" />
+		<entry key="usersettings.getUserPrivacySettings" value-ref="getUserPrivacySettingsCommand" />
+		<entry key="usersettings.getNotificationsSettings" value-ref="getNotificationsSettingsCommand" />
+
+		<entry key="user.getWikaTemplates" value-ref="userGetWikaTemplatesCommand" />
+		<entry key="user.getQRTemplates" value-ref="userGetQRTemplatesCommand" />
+		<entry key="user.unlockWikaTemplate" value-ref="userUnlockWikaTemplateCommand" />
+		<entry key="user.unlockQRTemplate" value-ref="userUnlockQRTemplateCommand" />
+		
+		<entry key="message.getMessage" value-ref="messageGetMessageCommand" />
+		<entry key="message.getUnreadMsgCount" value-ref="messageGetUnreadMsgCountCommand" />
+
+	    <entry key="system.feedback" value-ref="systemFeedbackCommand" />
+		<entry key="system.uploadFile" value-ref="systemUploadFileCommand" />
+
+		<!-- test apis -->
+		<entry key="test.cmd" value-ref="testCommand" />
+
+
+	</util:map>
+
+	<!-- ticket is un necessary -->
+	<util:set id="ticketUnnecessaryApiSet" value-type="java.lang.String">
+		<value>test.cmd</value>
+		<value>account.getVerifyCode</value>
+		<value>account.validateVerifyCode</value>		
+		<value>account.register</value>
+		<value>account.login</value>
+		<value>account.loginWithDJ</value>	
+		<value>account.changePasswordWithVerifyCode</value>	
+		<value>profile.resolveShortUrl</value>
+		<value>profile.getUserProfile</value>		
+	</util:set>
+
+</beans>

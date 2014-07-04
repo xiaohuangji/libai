@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.dajie:dj-wika-api:1.0.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/dajie/dj-wika-api/1.0.0-SNAPSHOT/dj-wika-api-1.0.0-20140303.022425-92.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/dajie/dj-wika-api/1.0.0-SNAPSHOT/dj-wika-api-1.0.0-20140303.022425-92-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/dajie/dj-wika-api/1.0.0-SNAPSHOT/dj-wika-api-1.0.0-20140303.022425-92-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

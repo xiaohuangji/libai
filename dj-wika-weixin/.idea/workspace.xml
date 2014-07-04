@@ -1,0 +1,1699 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="fb6b8c85-2cb4-449e-abae-74180722e11b" name="Default" comment="" />
+    <ignored path="dj-wika-weixin.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/dj-wika-weixin$HttpClientUtil.coverage" NAME="HttpClientUtil Coverage Results" MODIFIED="1392095714103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.dajie.wika.weixin.util.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DebuggerManager">
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_rules />
+    <ui_properties />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="dj-wika-weixin" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="HomeController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/controllers/HomeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="9" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="53" selection-start="327" selection-end="327" vertical-scroll-proportion="0.1572327" vertical-offset="0" max-vertical-offset="630">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dj_config.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/config/dj_config.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="21" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log4j.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/config/log4j.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="15" selection-start="568" selection-end="568" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/controllers/MessageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="89" column="45" selection-start="3887" selection-end="3887" vertical-scroll-proportion="0.0" vertical-offset="923" max-vertical-offset="1635">
+              <folding>
+                <element signature="e#0#4807#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageServiceImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/service/impl/MessageServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="67" column="17" selection-start="2740" selection-end="2740" vertical-scroll-proportion="0.0" vertical-offset="775" max-vertical-offset="2625">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#getChangeWikaTemplateResponse#0;class#MessageServiceImpl#0" expanded="false" />
+                <element signature="method#getDownloadResponse#0;class#MessageServiceImpl#0" expanded="false" />
+                <element signature="method#getHowToPlayResponse#0;class#MessageServiceImpl#0" expanded="false" />
+                <element signature="method#getMyvcardRegisterResponse#0;class#MessageServiceImpl#0" expanded="false" />
+                <element signature="method#getMyvcardLoginResponse#0;class#MessageServiceImpl#0" expanded="false" />
+                <element signature="method#getFinishedQRResponse#0;class#MessageServiceImpl#0" expanded="false" />
+                <element signature="method#makeNewsResponse#0;class#MessageServiceImpl#0" expanded="false" />
+                <element signature="e#9530#9536#0" expanded="true" />
+                <element signature="method#getTextResponse#0;class#MessageServiceImpl#0" expanded="false" />
+                <element signature="method#getSubscribeResponse#0;class#MessageServiceImpl#0" expanded="false" />
+                <element signature="method#parseRequestMsg#0;class#MessageServiceImpl#0" expanded="false" />
+                <element signature="method#extractRequestToReply#0;class#MessageServiceImpl#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/util/XmlUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/model/RequestMessage/RequestEventClickMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/model/RequestMessage/RequestEventMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/model/RequestMessage/RequestImageMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/model/RequestMessage/RequestLocationMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/model/RequestMessage/RequestNormalMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/model/RequestMessage/RequestTextMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/model/RequestMessage/RequestVoiceMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/model/RequestMessage/RequestLinkMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/model/RequestMessage/RequestMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/model/RequestMessage/RequestVideoMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/service/impl/MenuServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/service/impl/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/service/impl/TokenServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/applicationContext-dao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/dao/inject/DaoScan.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/dubbo_config/wika-weixin-app.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/util/JsonUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/constant/WeixinUrl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/util/HttpClientUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/applicationContext-dubbo.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/weixin-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/model/WXUserTrace.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/wika-service.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/service/RecallService.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/applicationContext-service.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/model/ServiceMessage/ServiceText.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/controllers/RecallController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/constant/MessageType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/constant/Weixin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/model/ServiceMessage/ServiceMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/model/PicUrls.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/constant/EventType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/dao/TokenDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/model/Error.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/model/Token.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/model/ReplyMessage/ReplyMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/dao/inject/DataSource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/model/WXUserInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/dao/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/util/DataUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/service/impl/RecallServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/config/response.txt" />
+        <option value="$PROJECT_DIR$/src/main/resources/config/menu.txt" />
+        <option value="$PROJECT_DIR$/src/main/resources/config/subscribe.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/service/impl/MessageServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/config/dj_config.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$USER_HOME$/devtools/apache-maven-3.1.1" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Android Lint</id>
+          </State>
+          <State>
+            <id>CDI(Contexts and Dependency Injection) issues</id>
+          </State>
+          <State>
+            <id>FreeMarker inspections</id>
+          </State>
+          <State>
+            <id>Google App Engine</id>
+          </State>
+          <State>
+            <id>Google Web Toolkit issues</id>
+          </State>
+          <State>
+            <id>HTML</id>
+          </State>
+          <State>
+            <id>JSP Inspections</id>
+          </State>
+          <State>
+            <id>Java EE issues</id>
+          </State>
+          <State>
+            <id>RESTful Web Service</id>
+          </State>
+          <State>
+            <id>Spring Model</id>
+          </State>
+          <State>
+            <id>Spring SecuritySpring Model</id>
+          </State>
+          <State>
+            <id>Spring Web FlowSpring Model</id>
+          </State>
+          <State>
+            <id>Spring Web ServicesSpring Model</id>
+          </State>
+          <State>
+            <id>Web Services</id>
+          </State>
+          <State>
+            <id>WebSocket issues</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="2" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dj-wika-weixin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="options.lastSelected" value="reference.settings.ide.settings.web.browsers" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.23223223" />
+    <property name="recentsLimit" value="5" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="true" />
+    <property name="LayoutCode.rearrangeEntries" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="SearchEverywhereHistory" value="&#10;r&#10;ur" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth0" value="67" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth1" value="74" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth2" value="77" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth3" value="67" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth4" value="117" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder4" value="4" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth5" value="835" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder5" value="5" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth0" value="74" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth1" value="76" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth2" value="79" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth3" value="74" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder3" value="3" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth4" value="74" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder4" value="4" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth5" value="860" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder5" value="5" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dajie.wika.weixin.model.Message" />
+      <recent name="com.dajie.wika.weixin.controllers1" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/dao/inject" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/util" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+      <recent name="$PROJECT_DIR$/src/main" />
+    </key>
+  </component>
+  <component name="RestoreUpdateTree">
+    <UpdateInfo date="Moments ago" ActionInfo="_Update">
+      <UpdatedFiles>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated from server" />
+          <option name="myStatusName" value="Changed on server" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CHANGED_ON_SERVER" />
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Updated" />
+            <option name="myStatusName" value="Changed" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="UPDATED" />
+            <PATH vcs="svn" revision="82185">$PROJECT_DIR$/pom.xml</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Created" />
+            <option name="myStatusName" value="Created" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="CREATED" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Deleted" />
+            <option name="myStatusName" value="Deleted" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="true" />
+            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Restored" />
+            <option name="myStatusName" value="Will be restored" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="RESTORED" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Modified" />
+          <option name="myStatusName" value="Modified" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MODIFIED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Skipped" />
+          <option name="myStatusName" value="Skipped" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SKIPPED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with conflicts" />
+          <option name="myStatusName" value="Will be merged with conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_CONFLICTS" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with tree conflicts" />
+          <option name="myStatusName" value="Merged with tree conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with property conflicts" />
+          <option name="myStatusName" value="Will be merged with property conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged" />
+          <option name="myStatusName" value="Will be merged" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Not in repository" />
+          <option name="myStatusName" value="Not in repository" />
+          <option name="mySupportsDeletion" value="true" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UNKNOWN" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally added" />
+          <option name="myStatusName" value="Locally added" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_ADDED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally removed" />
+          <option name="myStatusName" value="Locally removed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_REMOVED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Switched" />
+          <option name="myStatusName" value="Switched" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SWITCHED" />
+        </FILE-GROUP>
+      </UpdatedFiles>
+    </UpdateInfo>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.dj-wika-weixin">
+    <configuration default="false" name="DaoScan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.dajie.wika.weixin.daoinject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.dajie.wika.weixin.daoinject.DaoScan" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="dj-wika-weixin" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="SpringTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.dajie.wika.weixin.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.dajie.wika.weixin.util.SpringTest" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="dj-wika-weixin" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="MessageController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.dajie.wika.weixin.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.dajie.wika.weixin.controllers.MessageController" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="dj-wika-weixin" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="DataUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.dajie.wika.weixin.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.dajie.wika.weixin.util.DataUtil" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="dj-wika-weixin" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="RecallServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.dajie.wika.weixin.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.dajie.wika.weixin.service.impl.RecallServiceImpl" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="dj-wika-weixin" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails" singleton="true">
+      <module name="" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="depsClasspath" value="false" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_dj-wika-weixin" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Cover" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="59562" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browserFamily" value="FIREFOX" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" output_log_level="null" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browserFamily" value="FIREFOX" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="false" name="dj-wika-weixin" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.50" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
+      <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="dj-wika-weixin:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_dj-wika-weixin" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Cover" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="59562" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="dj-wika-weixin:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Application.DaoScan" />
+      <item index="1" class="java.lang.String" itemvalue="Application.SpringTest" />
+      <item index="2" class="java.lang.String" itemvalue="Tomcat Server.dj-wika-weixin" />
+      <item index="3" class="java.lang.String" itemvalue="Application.MessageController" />
+      <item index="4" class="java.lang.String" itemvalue="Application.DataUtil" />
+      <item index="5" class="java.lang.String" itemvalue="Application.RecallServiceImpl" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.RecallServiceImpl" />
+        <item index="1" class="java.lang.String" itemvalue="Application.DataUtil" />
+        <item index="2" class="java.lang.String" itemvalue="Application.MessageController" />
+        <item index="3" class="java.lang.String" itemvalue="Application.DaoScan" />
+        <item index="4" class="java.lang.String" itemvalue="Application.SpringTest" />
+      </list>
+    </recent_temporary>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="true" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <configuration useDefault="false">$USER_HOME$/.subversion</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fb6b8c85-2cb4-449e-abae-74180722e11b" name="Default" comment="" />
+      <created>1391842659751</created>
+      <updated>1391842659751</updated>
+      <workItem from="1391842661245" duration="2938000" />
+      <workItem from="1391845902789" duration="1365000" />
+      <workItem from="1391847341037" duration="973000" />
+      <workItem from="1391848591177" duration="353000" />
+      <workItem from="1391849084876" duration="830000" />
+      <workItem from="1391850056977" duration="1055000" />
+      <workItem from="1391851291499" duration="29527000" />
+      <workItem from="1392098884987" duration="11713000" />
+      <workItem from="1392186753486" duration="73000" />
+      <workItem from="1392186828129" duration="71829000" />
+    </task>
+    <task id="LOCAL-00001" summary="增加版本控制 ，提交到svn">
+      <created>1392695274104</created>
+      <updated>1392695274104</updated>
+    </task>
+    <task id="LOCAL-00002" summary="去掉不需要的依赖">
+      <created>1392695390102</created>
+      <updated>1392695390102</updated>
+    </task>
+    <task id="LOCAL-00003" summary="修改日志。测试idea的svn使用">
+      <created>1392695484101</created>
+      <updated>1392695484101</updated>
+    </task>
+    <task id="LOCAL-00004" summary="用户上传图片时，更新头像">
+      <created>1392698704102</created>
+      <updated>1392698704102</updated>
+    </task>
+    <task id="LOCAL-00005" summary="订阅消息更新内容">
+      <created>1392775102102</created>
+      <updated>1392775102102</updated>
+    </task>
+    <task id="LOCAL-00006" summary="修改不需要的功能">
+      <created>1392794744101</created>
+      <updated>1392794744101</updated>
+    </task>
+    <task id="LOCAL-00007" summary="联系人返回值变化">
+      <created>1393378777104</created>
+      <updated>1393378777104</updated>
+    </task>
+    <task id="LOCAL-00008" summary="修改逻辑。。">
+      <created>1393575345103</created>
+      <updated>1393575345103</updated>
+    </task>
+    <task id="LOCAL-00009" summary="增加上线必须要的配置文件">
+      <created>1393834314102</created>
+      <updated>1393834314102</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="120656000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26560426" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32934928" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22578125" sideWeight="0.499336" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3612218" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="SVN Properties" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37715805" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27755645" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.265625" sideWeight="0.500664" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27755645" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USERS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <confirmMoveToFailedCommit value="1" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="false" />
+    <MESSAGE value="个性eventtype类型定义" />
+    <MESSAGE value="增加代码控制" />
+    <MESSAGE value="增加版本控制 ，提交到svn" />
+    <MESSAGE value="去掉不需要的依赖" />
+    <MESSAGE value="修改日志。测试idea的svn使用" />
+    <MESSAGE value="用户上传图片时，更新头像" />
+    <MESSAGE value="订阅消息更新内容" />
+    <MESSAGE value="修改不需要的功能" />
+    <MESSAGE value="联系人返回值变化" />
+    <MESSAGE value="修改逻辑。。" />
+    <MESSAGE value="增加上线必须要的配置文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加上线必须要的配置文件" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/dajie/dj-wika-api/1.0.0-SNAPSHOT/dj-wika-api-1.0.0-20140214.092751-52.jar!/com/dajie/wika/service/ResourceService.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="21" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/dajie/dj-wika-api/1.0.0-SNAPSHOT/dj-wika-api-1.0.0-20140214.092751-52-sources.jar!/com/dajie/wika/service/ResourceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="18" selection-start="178" selection-end="178" vertical-scroll-proportion="0.34416825" vertical-offset="0" max-vertical-offset="523">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/weixin-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="62" selection-start="2919" selection-end="2919" vertical-scroll-proportion="0.74880385" vertical-offset="647" max-vertical-offset="1065">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/applicationContext-dubbo.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="43" selection-start="1496" selection-end="1496" vertical-scroll-proportion="-9.76" vertical-offset="371" max-vertical-offset="885">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/3.2.2.RELEASE/spring-web-3.2.2.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="29" selection-start="2403" selection-end="2403" vertical-scroll-proportion="0.72704715" vertical-offset="187" max-vertical-offset="615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/model/WXUserTrace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="33" selection-start="275" selection-end="275" vertical-scroll-proportion="0.55676854" vertical-offset="0" max-vertical-offset="645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/service/MessageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="196" selection-end="196" vertical-scroll-proportion="0.360262" vertical-offset="0" max-vertical-offset="458">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="36" selection-start="1962" selection-end="1962" vertical-scroll-proportion="0.7860262" vertical-offset="420" max-vertical-offset="5505">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/service/TokenService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="236" selection-end="236" vertical-scroll-proportion="0.4054054" vertical-offset="0" max-vertical-offset="481">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/applicationContext-service.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="61" selection-start="1661" selection-end="1661" vertical-scroll-proportion="0.9142212" vertical-offset="0" max-vertical-offset="780">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/constant/WeixinUrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="18" selection-start="1016" selection-end="1016" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1140">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/model/ServiceMessage/ServiceTextMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="106" selection-end="106" vertical-scroll-proportion="0.15592515" vertical-offset="0" max-vertical-offset="481">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/model/ServiceMessage/ServiceText.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="8" selection-start="257" selection-end="257" vertical-scroll-proportion="0.43659043" vertical-offset="0" max-vertical-offset="481">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/controllers/MenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="491" selection-end="491" vertical-scroll-proportion="0.302974" vertical-offset="32" max-vertical-offset="570">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/service/RecallService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="3" selection-start="90" selection-end="90" vertical-scroll-proportion="0.16629712" vertical-offset="0" max-vertical-offset="451">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/constant/Weixin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="52" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/util/HttpClientUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="43" selection-start="2218" selection-end="2218" vertical-scroll-proportion="0.6356589" vertical-offset="377" max-vertical-offset="1215">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/model/ServiceMessage/ServiceNewsMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="106" selection-end="106" vertical-scroll-proportion="0.15212981" vertical-offset="0" max-vertical-offset="493">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/model/ServiceMessage/ServiceVoiceMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="106" selection-end="106" vertical-scroll-proportion="0.14534883" vertical-offset="0" max-vertical-offset="516">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/model/ServiceMessage/ServiceImageMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="106" selection-end="106" vertical-scroll-proportion="0.14534883" vertical-offset="0" max-vertical-offset="516">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/model/ServiceMessage/ServiceMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="156" selection-end="156" vertical-scroll-proportion="0.20348836" vertical-offset="0" max-vertical-offset="516">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/controllers/TokenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="30" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/constant/ReturnCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/model/Token.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="23" selection-start="277" selection-end="277" vertical-scroll-proportion="0.32051283" vertical-offset="0" max-vertical-offset="702">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/model/PicUrls.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="41" selection-start="262" selection-end="262" vertical-scroll-proportion="0.42735043" vertical-offset="0" max-vertical-offset="900">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/model/Error.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="183" selection-end="183" vertical-scroll-proportion="0.23504274" vertical-offset="0" max-vertical-offset="702">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/dao/TokenDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="3" selection-start="217" selection-end="217" vertical-scroll-proportion="0.14482759" vertical-offset="0" max-vertical-offset="725">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/constant/MessageType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="45" selection-start="340" selection-end="340" vertical-scroll-proportion="0.31034482" vertical-offset="0" max-vertical-offset="725">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/constant/EventType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/applicationContext-dao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="11" selection-start="966" selection-end="966" vertical-scroll-proportion="0.003021148" vertical-offset="209" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/service/impl/TokenServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="13" selection-start="608" selection-end="608" vertical-scroll-proportion="0.30612245" vertical-offset="0" max-vertical-offset="750">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/dao/inject/DataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="0" selection-start="1375" selection-end="1375" vertical-scroll-proportion="0.57908165" vertical-offset="343" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/model/ReplyMessage/ReplyMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="50" selection-end="50" vertical-scroll-proportion="0.038265307" vertical-offset="0" max-vertical-offset="660">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/service/impl/MenuServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="50" selection-start="286" selection-end="286" vertical-scroll-proportion="0.08163265" vertical-offset="58" max-vertical-offset="885">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="107" column="19" selection-start="3638" selection-end="3638" vertical-scroll-proportion="0.33195022" vertical-offset="950" max-vertical-offset="46140">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/controllers/RecallController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="17" selection-start="523" selection-end="523" vertical-scroll-proportion="0.59866965" vertical-offset="0" max-vertical-offset="451">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/dao/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="67" selection-start="1374" selection-end="1374" vertical-scroll-proportion="0.5116279" vertical-offset="140" max-vertical-offset="570">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/model/WXUserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="5" selection-start="1783" selection-end="1783" vertical-scroll-proportion="1.5079007" vertical-offset="277" max-vertical-offset="1245">
+          <folding>
+            <element signature="e#1980#1981#0" expanded="true" />
+            <element signature="e#2020#2021#0" expanded="true" />
+            <element signature="e#2086#2087#0" expanded="true" />
+            <element signature="e#2144#2145#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/util/DataUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="70" selection-start="1021" selection-end="1021" vertical-scroll-proportion="0.94808125" vertical-offset="0" max-vertical-offset="1185">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="25" selection-start="2312" selection-end="2312" vertical-scroll-proportion="1.8991417" vertical-offset="150" max-vertical-offset="1530">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="22" selection-start="528" selection-end="528" vertical-scroll-proportion="0.7081545" vertical-offset="0" max-vertical-offset="466">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/service/impl/RecallServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="44" selection-start="1808" selection-end="1808" vertical-scroll-proportion="0.0" vertical-offset="645" max-vertical-offset="1290">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/controllers/MessageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="45" selection-start="3887" selection-end="3887" vertical-scroll-proportion="0.0" vertical-offset="923" max-vertical-offset="1635">
+          <folding>
+            <element signature="e#0#4807#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/menu.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="31" selection-start="571" selection-end="571" vertical-scroll-proportion="-8.555555" vertical-offset="129" max-vertical-offset="570">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/subscribe.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="73" selection-start="255" selection-end="266" vertical-scroll-proportion="0.09615385" vertical-offset="0" max-vertical-offset="468">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/response.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="39" selection-start="528" selection-end="528" vertical-scroll-proportion="-6.111111" vertical-offset="0" max-vertical-offset="270">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/service/impl/MessageServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="17" selection-start="2740" selection-end="2740" vertical-scroll-proportion="0.0" vertical-offset="775" max-vertical-offset="2625">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getChangeWikaTemplateResponse#0;class#MessageServiceImpl#0" expanded="false" />
+            <element signature="method#getDownloadResponse#0;class#MessageServiceImpl#0" expanded="false" />
+            <element signature="method#getHowToPlayResponse#0;class#MessageServiceImpl#0" expanded="false" />
+            <element signature="method#getMyvcardRegisterResponse#0;class#MessageServiceImpl#0" expanded="false" />
+            <element signature="method#getMyvcardLoginResponse#0;class#MessageServiceImpl#0" expanded="false" />
+            <element signature="method#getFinishedQRResponse#0;class#MessageServiceImpl#0" expanded="false" />
+            <element signature="method#makeNewsResponse#0;class#MessageServiceImpl#0" expanded="false" />
+            <element signature="e#9530#9536#0" expanded="true" />
+            <element signature="method#getTextResponse#0;class#MessageServiceImpl#0" expanded="false" />
+            <element signature="method#getSubscribeResponse#0;class#MessageServiceImpl#0" expanded="false" />
+            <element signature="method#parseRequestMsg#0;class#MessageServiceImpl#0" expanded="false" />
+            <element signature="method#extractRequestToReply#0;class#MessageServiceImpl#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dajie/wika/weixin/controllers/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="9" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/log4j.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="15" selection-start="568" selection-end="568" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/dj_config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="21" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="477">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="53" selection-start="327" selection-end="327" vertical-scroll-proportion="0.1572327" vertical-offset="0" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor>
+            <show-content>
+              <type id="jpa-descriptors" />
+              <type id="library" />
+              <type id="artifact" />
+              <type id="javaee-facet-resources" />
+            </show-content>
+          </artifact-editor>
+          <last-edited>dj-wika-weixin:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.23223223" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web (dj-wika-weixin)|Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.23223223" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.dajie:dj-framework-config-client:1.2.02</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.23223223" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.23223223" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>dj-wika-weixin</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.23223223" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.dajie:dj-framework-config-client:1.2.02</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.23223223" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+

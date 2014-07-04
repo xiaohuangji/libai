@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+
+    <!--<bean id="tokenService" class="com.dajie.wika.weixin.service.impl.TokenServiceImpl"></bean>-->
+    <!--<bean id="menuService" class="com.dajie.wika.weixin.service.impl.MenuServiceImpl"></bean>-->
+    <!--<bean id="messageService" class="com.dajie.wika.weixin.service.impl.MessageServiceImpl"></bean>-->
+
+    <context:component-scan base-package="com.dajie.wika.weixin.service.impl"></context:component-scan>
+
+    <!--  以下是关于定时相关的-->
+    <!-- 线程执行器配置，用于任务注册 -->
+    <bean id="executor" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+        <property name="corePoolSize" value="5" />
+        <property name="maxPoolSize" value="10" />
+        <property name="queueCapacity" value="10" />
+    </bean>
+
+    <!-- 业务对象 每天進行身價歸檔-->
+    <bean id="userRecallQuarz" class="com.dajie.wika.weixin.service.impl.RecallServiceImpl" />
+    <!-- 调度业务 -->
+    <bean id="jobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject" ref="userRecallQuarz"/>
+        <property name="targetMethod" value="sendRecallServiceMessage"/>
+    </bean>
+    <bean id="cronTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+        <property name="jobDetail" ref="jobDetail" />
+        <property name="cronExpression" value="0 0 16 * * ?" />
+    </bean>
+
+    <!-- 设置调度 -->
+    <bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="triggers">
+            <list>
+                <ref bean="cronTrigger" />
+            </list>
+        </property>
+        <property name="taskExecutor" ref="executor" />
+    </bean>
+
+    <!--  以上是关于定时相关的-->
+</beans>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd" >
+<mapper namespace="com.dajie.wika.dao.UserSettingsDAO">
+	<resultMap id="UserPrivacySettings" type="com.dajie.wika.model.UserPrivacySettings">
+		<id column="user_id" property="userId" jdbcType="INTEGER" />
+		<id column="email_privacy" property="emailPrivacy" jdbcType="INTEGER" />
+		<id column="mobile_privacy" property="mobilePrivacy" jdbcType="TINYINT" />
+	</resultMap>
+
+	<insert id="addDefaultUserSettings" parameterType="com.dajie.wika.model.UserDefaultSettings">
+		replace into
+		user_settings
+		(user_id,email_privacy,mobile_privacy,notification)
+		values
+		(#{userId},#{emailPrivacy},#{mobilePrivacy},#{notification});
+	</insert>
+
+	<select id="getPrivacySettingsByUserId" resultMap="UserPrivacySettings"
+		parameterType="java.lang.Integer">
+		select user_id, email_privacy,mobile_privacy from
+		user_settings
+		where user_id = #{userId}
+	</select>
+
+	<select id="getNotificationSetting"  resultType="java.lang.Long"
+		parameterType="java.lang.Integer">
+		select notification from user_settings where user_id
+		=#{userId}
+	</select>
+
+	<update id="setPrivacySettings" parameterType="com.dajie.wika.model.UserPrivacySettings">
+		update
+		user_settings set email_privacy = #{emailPrivacy},
+		mobile_privacy=#{mobilePrivacy}
+		where user_id = #{userId}
+	</update>
+
+	<update id="setNotificationSetting" parameterType="java.util.Map">
+		update
+		user_settings set notification = #{notification}
+		where user_id =
+		#{userId}
+	</update>
+</mapper>

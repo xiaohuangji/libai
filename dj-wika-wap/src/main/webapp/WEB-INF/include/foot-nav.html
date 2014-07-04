@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="trial" uri="http://www.dajie.com/trial/core"%>
+ <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<!-- 底部导航 -->
+<trial:assertcss files="/up/dj-mobile/vcard/lib/foot-nav/foot-nav.css"/>
+<trial:assertjs files="/up/dj-mobile/vcard/lib/foot-nav/hack-foot-nav.js" />
+
+<!-- <link rel="stylesheet" href="http://assets.dajieimg.com.wika/up/dj-mobile/vcard/lib/foot-nav/foot-nav.css"/>
+<script type="text/javascript" src="http://assets.dajieimg.com.wika/up/dj-mobile/vcard/lib/foot-nav/hack-foot-nav.js"></script>
+ -->
+<nav class="i-foot-nav">
+  <menu class="menu t-flex-wrap">
+    <li class="t-flex-item ${myvcardflag==1?'select':''}">
+      <a href="/user/myvcard?userId=${userId}"><i></i>我的微卡</a>
+    </li>
+    <li class="gap"></li>
+    <li class="t-flex-item ${followflag==1?'select':''}" >
+      <a href="/relation/i-know?following=1"><i></i>
+      <c:if test="${newFollowerCount>0}">  
+     	<em>${newFollowerCount}</em>
+      </c:if>
+         　联系人　</a>
+    </li>
+    <li class="gap"></li>
+    <li class="t-flex-item">
+      <span><i></i>　更多　</span>
+      <nav class="sub-nav">
+        <menu class="sub-menu">
+          <li><a href="/user/edit">编辑资料</a></li>
+          <li><a href="/setting/setting">设置</a></li>
+          <li><a href="http://mp.weixin.qq.com/s?__biz=MzA4OTE2NDYyNw==&mid=10000160&idx=1&sn=7a9a7669bbc78cda1d0b5c12e813cdc8#rd">意见反馈</a></li>
+          <li><a href="/account/logout-service">退出</a></li>
+        </menu>
+      </nav>
+    </li>
+  </menu>
+</nav>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<bean id="relationFollowCommand" class="com.dajie.mobile.mcp.api.command.relation.Follow">
+		<property name="relationServiceStub" ref="relationServiceStub" />
+	</bean>
+
+	<bean id="relationUnfollowCommand" class="com.dajie.mobile.mcp.api.command.relation.Unfollow">
+		<property name="relationServiceStub" ref="relationServiceStub" />
+	</bean>
+	<bean id="relationGetFollowingsCommand" class="com.dajie.mobile.mcp.api.command.relation.GetFollowings">
+		<property name="relationService" ref="relationService" />
+	</bean>
+
+	<bean id="relationGetFollowersCommand" class="com.dajie.mobile.mcp.api.command.relation.GetFollowers">
+		<property name="relationService" ref="relationService" />
+	</bean>
+	
+	<bean id="relationGetFriendsCommand" class="com.dajie.mobile.mcp.api.command.relation.GetFriends">
+	    <property name="relationService" ref="relationService" />
+	</bean>
+	
+	<bean id="relationSayHiCommand" class="com.dajie.mobile.mcp.api.command.relation.SayHi">
+	    <property name="relationService" ref="relationService" />
+	</bean>
+	
+	<bean id="relationIntroduceCommand" class="com.dajie.mobile.mcp.api.command.relation.Introduce">
+	    <property name="relationService" ref="relationService" />
+	</bean>
+	
+	<bean id="relationShareWikaCommand" class="com.dajie.mobile.mcp.api.command.relation.ShareWika">
+	    <property name="relationService" ref="relationService" />
+	</bean>
+	
+</beans>

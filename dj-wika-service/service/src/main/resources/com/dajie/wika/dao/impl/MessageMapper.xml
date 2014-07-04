@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd" >
+<mapper namespace="com.dajie.wika.dao.MessageDAO">
+    <resultMap id="message_map" type="com.dajie.wika.model.Message">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <result column="type" property="type" jdbcType="INTEGER"/>
+        <result column="from_id" property="fromId" jdbcType="INTEGER"/>
+        <result column="to_id" property="toId" jdbcType="INTEGER"/>
+        <result column="payload" property="payload" jdbcType="VARCHAR"/>
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <insert id="insert" parameterType="com.dajie.wika.model.Message">
+        INSERT INTO message(`id`, type, from_id, to_id, payload, create_time) VALUES
+            (
+            #{id,jdbcType=BIGINT},
+            #{type,jdbcType=INTEGER},
+            #{fromId,jdbcType=INTEGER},
+            #{toId,jdbcType=INTEGER},
+            #{payload,jdbcType=VARCHAR},
+            now()
+            )
+    </insert>
+
+    <select id="getMessages" resultMap="message_map" parameterType="java.util.Map">
+        SELECT * FROM message
+  		where to_id = #{userId} and
+  		<![CDATA[create_time > from_unixtime(#{timestamp})]]>
+        ORDER BY create_time DESC
+        limit #{limit}
+    </select>
+
+</mapper>

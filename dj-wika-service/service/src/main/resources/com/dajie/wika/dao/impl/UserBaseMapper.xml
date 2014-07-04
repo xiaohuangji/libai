@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd" >
+<mapper namespace="com.dajie.wika.dao.UserBaseDAO">
+	<resultMap id="UserBase" type="com.dajie.wika.model.UserBase">
+		<id column="user_id" property="userId" jdbcType="INTEGER" />
+		<id column="wika_id" property="wikaId" jdbcType="VARCHAR" />
+		<id column="password" property="password" jdbcType="CHAR" />
+		<id column="name" property="name" jdbcType="VARCHAR" />
+		<id column="gender" property="gender" jdbcType="TINYINT" />
+		<id column="avatar" property="avatar" jdbcType="VARCHAR" />
+		<id column="wika_template" property="wikaTemplate" jdbcType="TINYINT" />
+		<id column="face_code_type" property="faceCodeType" jdbcType="TINYINT" />
+		<id column="face_qr_code" property="faceQRCode" jdbcType="VARCHAR" />
+		<id column="email" property="email" jdbcType="VARCHAR" />
+		<id column="birth" property="birth" jdbcType="DATE" />
+		<id column="mobile" property="mobile" jdbcType="VARCHAR" />
+		<id column="mobile_confirmed" property="mobileConfirmed" jdbcType="TINYINT" />
+		<id column="location" property="location" jdbcType="VARCHAR" />
+		<id column="type" property="type" jdbcType="TINYINT" />
+		<id column="status" property="status" jdbcType="TINYINT" />
+		<id column="feature" property="feature" jdbcType="INTEGER" />
+		<id column="activation" property="activation" jdbcType="TINYINT" />
+		<id column="introduce" property="introduce" jdbcType="VARCHAR" />
+		<id column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+	</resultMap>
+
+	<insert id="insertUserBase" parameterType="com.dajie.wika.model.UserBase">
+		insert into user_base
+		(user_id,wika_id,password,name,gender,avatar,wika_template,face_code_type,face_qr_code,email,birth,mobile,mobile_confirmed,location,type,status,feature,introduce,activation,create_time)
+		values
+		(#{userId,jdbcType=INTEGER},
+		#{wikaId,jdbcType=VARCHAR},#{password,jdbcType=CHAR},
+		#{name,jdbcType=VARCHAR},#{gender,jdbcType=VARCHAR},
+		#{avatar,jdbcType=VARCHAR},
+		#{wikaTemplate,jdbcType=TINYINT},
+		#{faceCodeType,jdbcType=TINYINT},
+		#{faceQRCode,jdbcType=VARCHAR},
+		#{email,jdbcType=VARCHAR},
+		#{birth,jdbcType=DATE},
+		#{mobile,jdbcType=VARCHAR},
+		#{mobileConfirmed,jdbcType=TINYINT},
+		#{location,jdbcType=INTEGER},
+		#{type,jdbcType=TINYINT},
+		#{status,jdbcType=TINYINT},
+		#{feature,jdbcType=INTEGER},
+		#{introduce,jdbcType=VARCHAR},
+		#{activation,jdbcType=TINYINT},
+		now())
+	</insert>
+
+	<select id="getUserBaseById" resultMap="UserBase" parameterType="java.lang.Integer">
+		select
+		user_id,wika_id,password,name,gender,avatar,wika_template,face_code_type,face_qr_code,email,birth,mobile,mobile_confirmed,location,type,status,feature,introduce,activation,create_time
+		from user_base
+		where user_id =#{userId} limit 1;
+	</select>
+
+	<select id="getUserBaseByMobile" resultMap="UserBase"
+		parameterType="java.lang.Integer">
+		select
+		user_id,wika_id,password,name,gender,avatar,wika_template,face_code_type,face_qr_code,email,birth,mobile,mobile_confirmed,location,type,status,feature,introduce,activation,create_time
+		from user_base
+		where mobile =#{mobile} and mobile_confirmed = 1 limit 1;
+	</select>
+
+	<update id="updateUserBase" parameterType="com.dajie.wika.model.UserBase">
+		update user_base set
+		name=#{name},
+		gender=#{gender},
+		avatar=#{avatar},
+		email=#{email},
+		location=#{location},
+		introduce=#{introduce}
+		where
+		user_id = #{userId}
+	</update>
+
+    <update id="updateUserBaseNoAvatar"  parameterType="com.dajie.wika.model.UserBase">
+        update user_base set
+		name=#{name},
+		gender=#{gender},
+		email=#{email},
+		location=#{location},
+		introduce=#{introduce}
+		where
+		user_id = #{userId}
+    </update>
+	<update id="updateUserQRCode" parameterType="java.util.Map">
+		update user_base set
+		face_qr_code=#{faceQRCode},face_code_type=#{faceCodeType}
+		where user_id = #{userId}
+	</update>
+
+	<update id="updateWikaTemplate" parameterType="java.util.Map">
+		update user_base set
+		wika_template = #{wikaTemplate}
+		where user_id = #{userId}
+	</update>
+
+	<update id="updateUserType" parameterType="java.util.Map">
+		update user_base set
+		type=#{type}
+		where
+		user_id = #{userId}
+	</update>
+
+	<update id="updateUserStatus" parameterType="java.util.Map">
+		update user_base set
+		status=#{status}
+		where
+		user_id = #{userId}
+	</update>
+
+	<update id="updateUserFeature" parameterType="java.util.Map">
+		update user_base
+		set
+		status=#{status}
+		where
+		user_id = #{userId}
+	</update>
+
+	<update id="updatePwd" parameterType="java.util.Map">
+		update user_base set
+		password = #{password} where user_id = #{userId}
+	</update>
+
+	<update id="updateMobile" parameterType="java.util.Map">
+		update user_base set
+		mobile = #{mobile} where user_id = #{userId}
+	</update>
+
+	<update id="updateActivition" parameterType="java.util.Map">
+		update user_base set activation = #{activation} where user_id = #{userId}
+		and activation &lt;#{activation}
+	</update>
+
+	<update id="updateAvatar" parameterType="java.util.Map">
+		update user_base set avatar = #{avatar} where user_id = #{userId}
+	</update>
+
+	<update id="updateAvatarAndQRCode" parameterType="java.util.Map">
+		update user_base set avatar =
+		#{avatar},face_qr_code=#{faceQRCode},face_code_type=#{faceCodeType}
+		where user_id = #{userId}
+	</update>
+	
+	<update id="updateMobileAndPwd" parameterType="java.util.Map">
+	    update user_base set mobile=#{mobile},password = #{password},mobile_confirmed = 1 where user_id = #{userId}
+	</update>
+	
+	<update id="cleanUnconfirmedMobile" parameterType="java.lang.String">
+	    update user_base set mobile=null where mobile=#{mobile} and mobile_confirmed = 0
+	</update>
+</mapper>

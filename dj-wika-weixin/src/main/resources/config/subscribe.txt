@@ -1,0 +1,7 @@
+微卡恭候陛下多时！
+★还没有微卡？<a href="http://www.weika001.com/user/myvcard?openid=%s"> 点这里5秒免费制作 </a>
+★微卡还没有头像？<a href="http://www.weika001.com/user/myvcard?openid=%s&sync=1" > 点这里1秒同步微信头像 </a>
+★想知道还有谁想认识你？  <a href="http://www.weika001.com/relation/i-know?openid=%s&following=0"> 点这里查看 </a>
+★微卡模板不满意？<a href="http://www.weika001.com/user/login-unlock?openid=%s"> 点这里立即更换 </a>
+★想制作脸码头像？回复【制作脸码】
+我们保证只要你持续使用微卡不用多久你就会升职加薪，当上总经理，出任CEO，赢取白富美，走上人生巅峰！么么

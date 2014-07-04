@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<bean id="getNotificationsSettingsCommand"
+		class="com.dajie.mobile.mcp.api.command.usersettings.GetNotificationsSettings">
+		<property name="userSettingsService" ref="userSettingsService" />
+	</bean>
+
+	<bean id="getUserPrivacySettingsCommand"
+		class="com.dajie.mobile.mcp.api.command.usersettings.GetUserPrivacySettings">
+		<property name="userSettingsService" ref="userSettingsService" />
+	</bean>
+
+	<bean id="setNotificationsSettingsCommand"
+		class="com.dajie.mobile.mcp.api.command.usersettings.SetNotificationsSettings">
+		<property name="userSettingsService" ref="userSettingsService" />
+	</bean>
+
+	<bean id="setUserPrivacySettingsCommand"
+		class="com.dajie.mobile.mcp.api.command.usersettings.SetUserPrivacySettings">
+		<property name="userSettingsService" ref="userSettingsService" />
+	</bean>
+
+    <bean id="setDeviceTokenCommand" class="com.dajie.mobile.mcp.api.command.usersettings.SetDeviceToken">
+        <property name="userSettingsService" ref="userSettingsService" />
+    </bean>
+</beans>

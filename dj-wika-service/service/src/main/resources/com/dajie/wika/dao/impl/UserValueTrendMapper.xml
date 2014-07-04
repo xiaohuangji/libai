@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd" >
+<mapper namespace="com.dajie.wika.dao.UserValueTrendDAO">
+    <resultMap id="userValue_map" type="com.dajie.wika.model.UserValue">
+        <id column="user_id" property="userId" jdbcType="INTEGER"/>
+        <result column="user_value" property="userValue" jdbcType="INTEGER"/>
+        <result column="day_start_time" property="dayStartTime" jdbcType="BIGINT"/>
+    </resultMap>
+
+    <insert id="insertUserValue" parameterType="java.util.List">
+        INSERT INTO user_value_trend (user_id,user_value,day_start_time) VALUES
+                <foreach collection="list" item="userValue" index="index" separator=",">
+            (#{userValue.userId,jdbcType=INTEGER},
+            #{userValue.userValue,jdbcType=INTEGER},
+            #{userValue.dayStartTime,jdbcType=BIGINT}
+            )
+        </foreach>
+    </insert>
+   
+    <select id="getUserValueTrend" resultMap="userValue_map" parameterType="java.lang.Integer">
+        SELECT * FROM user_value_trend
+  		where user_id = #{userId}
+  		order by day_start_time desc 
+    </select>
+    
+    <delete id="removeOldUserValue" parameterType="java.lang.Long">
+        delete from user_value_trend where 
+        <![CDATA[day_start_time < #{dayStartTime}]]>
+    </delete>
+
+</mapper>

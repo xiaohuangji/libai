@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//ibatis.apache.org//DTD Config 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-config.dtd">
+<configuration>
+    <settings>
+        <setting name="lazyLoadingEnabled" value="false"/>
+    </settings>
+    <typeAliases>
+        <typeAlias alias="BONECP" type="com.dajie.common.framework.ibatis.datasource.BoneCPDataSourceFactory"/>
+    </typeAliases>
+<!--     <typeHandlers>
+        <typeHandler javaType="com.dajie.wika.enums.DiscussTopStatusEnum" jdbcType="TINYINT"
+                     handler="com.dajie.wika.dao.handler.DiscussTopStatusEnumTypeHandler"/>
+        <typeHandler javaType="com.dajie.wika.enums.DiscussStatusEnum" jdbcType="TINYINT"
+                     handler="com.dajie.wika.dao.handler.DiscussStatusEnumTypeHandler"/>
+    </typeHandlers> -->
+    <plugins>
+        <plugin interceptor="com.dajie.common.framework.ibatis.plugin.QueryInterceptor"/>
+    </plugins>
+    <environments default="wika_master">
+        <environment id="wika_master">
+            <transactionManager type="JDBC"/>
+            <dataSource type="BONECP">
+                <property name="driver" value="${wika_db_driver}"/>
+                <property name="url" value="${wika_db_master_url}"/>
+                <property name="username" value="${wika_db_master_username}"/>
+                <property name="password" value="${wika_db_master_password}"/>
+                <property name="maxPoolSize" value="${wika_db_master_maxPoolSize}"/>
+                <property name="minPoolSize" value="${wika_db_master_minPoolSize}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <mapper resource="com/dajie/wika/dao/impl/UserBaseMapper.xml"/>
+        <mapper resource="com/dajie/wika/dao/impl/UserOccupationMapper.xml"/>
+        <mapper resource="com/dajie/wika/dao/impl/PlatformMapMapper.xml"/>
+        <mapper resource="com/dajie/wika/dao/impl/IdSequenceMapper.xml"/>
+        <mapper resource="com/dajie/wika/dao/impl/MessageMapper.xml"/>
+        <mapper resource="com/dajie/wika/dao/impl/FeedbackMapper.xml"/>
+        <mapper resource="com/dajie/wika/dao/impl/UserValueDetailMapper.xml"/>
+        <mapper resource="com/dajie/wika/dao/impl/UserCountBaseMapper.xml"/>
+        <mapper resource="com/dajie/wika/dao/impl/UserSettingsMapper.xml"/>
+        <mapper resource="com/dajie/wika/dao/impl/UserValueTrendMapper.xml"/>
+        <mapper resource="com/dajie/wika/dao/impl/RelationFollowerMapper.xml"/>
+        <mapper resource="com/dajie/wika/dao/impl/RelationFollowingMapper.xml"/>
+        <mapper resource="com/dajie/wika/dao/impl/RelationFriendMapper.xml"/>
+        <mapper resource="com/dajie/wika/dao/impl/TemplateMapper.xml"/>
+        <mapper resource="com/dajie/wika/dao/impl/UnlockTemplateMapper.xml"/>
+        <mapper resource="com/dajie/wika/dao/impl/UserDeviceMapper.xml" />
+        <mapper resource="com/dajie/wika/dao/impl/QRcodeMapper.xml" />
+    </mappers>
+</configuration>

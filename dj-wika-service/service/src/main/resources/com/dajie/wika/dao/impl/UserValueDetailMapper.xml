@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd" >
+<mapper namespace="com.dajie.wika.dao.UserValueDetailDAO">
+    <resultMap id="userValueDetail_map" type="com.dajie.wika.model.UserValueDetail">
+        <id column="user_id" property="userId" jdbcType="INTEGER"/>
+        <result column="userinfo_value" property="userInfoValue" jdbcType="INTEGER"/>
+        <result column="sharewika_value" property="shareWikaValue" jdbcType="INTEGER"/>
+        <result column="visited_value" property="visitedValue" jdbcType="INTEGER"/>
+        <result column="changeqr_value" property="changeQRValue" jdbcType="INTEGER"/>
+        <result column="changewika_value" property="changeWikaValue" jdbcType="INTEGER"/>
+        <result column="following_value" property="followingValue" jdbcType="INTEGER"/>
+        <result column="total_value" property="totalValue" jdbcType="INTEGER"/>
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+	<!-- 初始化时身价为5000元 -->
+    <insert id="insert" parameterType="java.lang.Integer">
+        INSERT INTO user_value_detail (user_id,total_value) VALUES
+        (#{userId},5000)
+    </insert>
+    
+    <update id="incrValue" parameterType="java.util.Map" statementType="STATEMENT">
+        update user_value_detail set ${type}=if(${type}+${incrvalue}>0,${type}+${incrvalue},0) , total_value=if(total_value+${incrvalue}>0,total_value+${incrvalue},0)
+        where user_id = ${userId}
+    </update>
+    
+    <update id="updateValue" parameterType="java.util.Map" statementType="STATEMENT">
+        update user_value_detail set ${type}=${typevalue} , total_value=${totalvalue}
+        where user_id = ${userId}
+    </update>
+
+    <select id="getUserValue" resultMap="userValueDetail_map" parameterType="java.lang.Integer">
+        SELECT * FROM user_value_detail
+  		where user_id = #{userId}
+    </select>
+    
+    <select id="getCurUserValue" resultMap="mutiUserValue_map">
+        SELECT user_id,total_value FROM user_value_detail
+  		order by user_id 
+    </select>
+    
+    <resultMap id="mutiUserValue_map" type="com.dajie.wika.model.UserValue">
+        <id column="user_id" property="userId" jdbcType="INTEGER"/>
+        <result column="total_value" property="userValue" jdbcType="INTEGER"/>
+    </resultMap>
+    
+    <select id="getRank" resultType="java.lang.Integer" parameterType="java.lang.Integer">
+        select count(1) from user_value_detail 
+        where total_value &gt;
+        (select total_value from user_value_detail where user_id= #{userId})
+    </select>
+    
+    <select id="getTotalUserCount" resultType="java.lang.Integer">
+        select count(1) from user_value_detail 
+    </select>
+
+</mapper>

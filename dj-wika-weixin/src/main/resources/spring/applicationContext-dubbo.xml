@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+        ">
+        
+	<dubbo:application name="wika.weixin.dajie.com" />
+	
+	<dubbo:registry protocol="zookeeper" address="Zookeeper01:2181,Zookeeper02:2181,Zookeeper03:2181" />
+	
+	<dubbo:reference id="accountService"
+		interface="com.dajie.wika.service.AccountService">
+	</dubbo:reference>
+	
+	<dubbo:reference id="userCountService"
+		interface="com.dajie.wika.service.UserCountService">
+	</dubbo:reference>
+	
+	<dubbo:reference id="userSettingsService"
+		interface="com.dajie.wika.service.UserSettingsService">
+	</dubbo:reference>
+	
+	<dubbo:reference id="relationService"
+		interface="com.dajie.wika.service.RelationService">
+	</dubbo:reference>
+	
+	<dubbo:reference id="templateService"
+		interface="com.dajie.wika.service.TemplateService">
+	</dubbo:reference>
+	
+	<dubbo:reference id="occupationService"
+		interface="com.dajie.wika.service.OccupationService">
+	</dubbo:reference>
+	
+	<dubbo:reference id="profileServiceStub"
+		interface="com.dajie.wika.service.stub.ProfileServiceStub">
+	</dubbo:reference>
+	
+	<dubbo:reference id="corpSearchService"
+		interface="com.dajie.wika.service.CorpSearchService">
+	</dubbo:reference>
+	
+	<dubbo:reference id="qRcodeService"
+		interface="com.dajie.wika.service.QRcodeService">
+	</dubbo:reference>
+
+    <dubbo:reference id="resourceService"
+                     interface="com.dajie.wika.service.ResourceService">
+    </dubbo:reference>
+
+</beans>

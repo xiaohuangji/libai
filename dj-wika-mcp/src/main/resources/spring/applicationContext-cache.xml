@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<!-- redis cache pool -->
+<!-- 	<bean id="jedisCachePoolConfig" class="redis.clients.jedis.JedisPoolConfig"> -->
+<!-- 		<property name="maxActive" value="1024" /> -->
+<!-- 		<property name="maxIdle" value="200" /> -->
+<!-- 		<property name="maxWait" value="1000" /> -->
+<!-- 		<property name="testOnBorrow" value="true" /> -->
+<!-- 	</bean> -->
+
+<!-- 	<bean id="jedisCachePool" class="redis.clients.jedis.JedisPool" -->
+<!-- 		destroy-method="destroy"> -->
+<!-- 		<constructor-arg name="poolConfig" ref="jedisCachePoolConfig" /> -->
+<!-- 		<constructor-arg name="host" value="redis_project" /> -->
+<!-- 		<constructor-arg name="port" value="6329" /> -->
+<!-- 		<constructor-arg name="timeout" value="5000" /> -->
+<!-- 	</bean> -->
+
+<!-- 	<bean id="passportCache" class="com.dajie.mobile.mcp.cache.JedisCacheUtil"> -->
+<!-- 		<property name="pool" ref="jedisCachePool"></property> -->
+<!-- 	</bean> -->
+
+<!-- 	<bean id="sigCache" class="com.dajie.mobile.mcp.cache.JedisCacheUtil"> -->
+<!-- 		<property name="pool" ref="jedisCachePool"></property> -->
+<!-- 	</bean> -->
+	
+	 <bean id="sigCache" class="com.dajie.framework.cache.inject.spring.StringCacheFactoryBean">
+          <property name="clusterType" value="WIKA" />
+          <property name="keyTemplate" value="wika_mcp_sig_{sig}_string"/>
+          <property name="serializeClass" value="java.lang.String"/>
+          <property name="duration" value="5"/>
+          <property name="timeUnit" value="SECONDS"/>
+    </bean>
+    
+    <bean id="passportCache" class="com.dajie.framework.cache.inject.spring.StringCacheFactoryBean">
+           <property name="clusterType" value="WIKA" />
+           <property name="keyTemplate" value="wika_passport_userId_{userId}_object"/>
+           <property name="serializeClass" value="com.dajie.mobile.mcp.passport.entity.UserPassport"/>
+           <property name="duration" value="17520"/>
+           <property name="timeUnit" value="HOURS"/>
+    </bean>
+
+</beans>

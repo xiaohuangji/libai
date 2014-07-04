@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd" >
+<mapper namespace="com.dajie.wika.dao.IdSequenceDAO">
+
+    <update id="updateToDB" parameterType="java.util.Map">
+        update idsequence set
+        id = #{id} 
+        WHERE type = #{type}
+    </update>
+    
+    <select id="getCur"  parameterType="int" resultType="java.lang.Long">
+        select id from idsequence where type=#{type}
+    </select>
+</mapper>

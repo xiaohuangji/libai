@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd" >
+<mapper namespace="com.dajie.wika.dao.TemplateDAO">
+    <resultMap id="wikaTemplate" type="com.dajie.wika.model.WikaTemplate">
+        <id column="tid" property="WTId" jdbcType="INTEGER"/>
+        <result column="url" property="WTUrl" jdbcType="VARCHAR"/>
+        <result column="name" property="name" jdbcType="VARCHAR"/>
+        <result column="tips" property="tips" jdbcType="VARCHAR"/>
+        <result column="level" property="level" jdbcType="INTEGER"/>
+        <result column="unlock_action" property="unlockAction" jdbcType="INTEGER"/>
+    </resultMap>
+    
+     <resultMap id="qrTemplate" type="com.dajie.wika.model.QRTemplate">
+        <id column="tid" property="QTId" jdbcType="INTEGER"/>
+        <result column="url" property="QTUrl" jdbcType="VARCHAR"/>
+        <result column="name" property="name" jdbcType="VARCHAR"/>
+        <result column="tips" property="tips" jdbcType="VARCHAR"/>
+        <result column="level" property="level" jdbcType="INTEGER"/>
+        <result column="unlock_action" property="unlockAction" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <select id="getWikaTemplates" resultMap="wikaTemplate" >
+        SELECT tid, url, name, tips, level, unlock_action FROM template
+  		where type = 1;
+    </select>
+    
+    <select id="getQRTemplates" resultMap="qrTemplate" >
+        SELECT tid, url, name, tips, level, unlock_action FROM template
+  		where type = 2;
+    </select>
+
+</mapper>
